@@ -1,0 +1,65 @@
+
+
+    /*
+            ***** TANIMLAMADA DİKKAT EDİLECEK HUSUSLAR *****
+
+            - Tanımlama yapılırken BÜYÜK – küçük harf ayrımı vardır.
+
+            - Değişken adları rakam ile başlayamaz.
+
+            - Aynı kod bloğu içerisinde aynı isimde birden fazla değişken tanımlanamaz.
+
+            - Özel karakter içermemelidir. Örneğin ( /, -, +, *, % vb. )
+
+            - Türkçe karakter kullanılmamalıdır. Örneğin ( ç, ğ, ş, ö, ü vb. )
+
+    */
+
+    /*
+
+    Değişken tipleri
+
+    int içerisine tam sayı değişken alır
+
+    float içerisine virgüllü sayı değişkeni alır
+
+    double içerisine virgüllü sayı değişkeni alır
+
+    char içerisine karakter alır
+
+    long int
+
+    short int
+
+    */
+
+
+int main()
+{
+
+//   int 1ali = 10;  RAKAMLA BAŞLAYAMAZ ( HATALI !!! )
+
+//    float isim/ = 51; ÖZEL KARAKTER KULLANILAMAZ ( HATALI !!! )
+
+//    int tam_sayı = 10; TÜRKÇE KARAKTER İÇERMEMELİDİR ( HATALI !!! )
+
+//    char tam_sayi = 'B'; AYNI DEĞİŞKEN İSMİ KULLANILAMAZ ( HATALI !!! )
+
+
+    int tam_sayi = 10; // %d ile alınır ve yazdırılır
+
+    float virgullu_sayi = 1.123456789; // %f ile alınır ve yazdırılır
+
+    double virgullu_sayi_2 = 2.123456789101112; // %lf ile alınır ve yazdırılır
+
+    char karakter = 'A'; // %c ile alınır ve yazdırılır
+
+    // \n komutu bir alt satıra in
+
+    printf("Tam sayi degerimiz : %d\n",tam_sayi);
+    printf("Virgullu sayi degerimiz : %.9f\n",virgullu_sayi); // virgülden sonra 2 hane yazdırmak için %.2f
+    printf("Double Virgullu sayi degerimiz : %.15lf\n",virgullu_sayi_2);
+    printf("Karakterimiz: %c\n",karakter);
+
+    return 0;
+}
